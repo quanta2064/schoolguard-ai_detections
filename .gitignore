@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SentinelEdu local media and AI files
+videos/
+evidence/
+models/
+*.mp4
+*.avi
+*.mov
+*.mkv
