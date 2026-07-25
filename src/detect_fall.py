@@ -1,3 +1,4 @@
+from alert_client import send_incident
 import cv2
 import json
 from datetime import datetime
@@ -131,6 +132,7 @@ while True:
                         }
 
                         print(json.dumps(incident, indent=2))
+                        send_incident(incident)
                 else:
                     label = f"Possible fall: {down_duration:.1f}s"
                     color = (0, 165, 255)

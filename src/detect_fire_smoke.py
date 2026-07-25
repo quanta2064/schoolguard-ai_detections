@@ -1,3 +1,4 @@
+from alert_client import send_incident
 import cv2
 import json
 import os
@@ -105,6 +106,7 @@ while True:
                 }
 
                 print(json.dumps(incident, indent=2))
+                send_incident(incident)
 
         except Exception as error:
             print(f"Roboflow inference error: {error}")
