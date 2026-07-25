@@ -225,3 +225,6 @@ models/
 *.avi
 *.mov
 *.mkv
+.env
+temp_frames/
+*.pt
